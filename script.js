@@ -53,7 +53,7 @@ async function askGemini() {
   chatThread.scrollTop = chatThread.scrollHeight;
 
   try {
-    const res = await fetch('http://localhost:3000/chat', {
+    const res = await fetch('https://anti-relapse-ai-1.onrender.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: userMessage })
