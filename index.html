@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anti Relapse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Yow Girl 👋</h1>
+    <p id="message">You're not alone right now.</p>
+    <button onclick="newMessage()">Need a hug? 💬</button>
+    <button onclick="bigHug()">Emergency Hug 🤗</button>
+
+    <div class="reminder-box">
+      <p>☀️ Daily Reminder: You deserve love that doesn’t confuse you. —From your #1 quiet supporter 💙</p>
+    </div>
+
+    <div class="chat-input-container">
+  <textarea id="userInput" placeholder="Type your message here... 💬"></textarea>
+  <button onclick="askGemini()">Send</button>
+</div>
+
+<div id="chatThread" class="chat-thread"></div>
+
+
+
+    <audio id="bgMusic" loop>
+      <source src="Oceans (Where Feet May Fail) - Hillsong United lyrics.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="toggleMusic()">🎵 Play your Comfort Music</button> 
+    <footer>
+  <p>Created with 💙 by: <strong>Bry</strong></p>
+</footer>
+
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
